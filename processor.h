@@ -10,14 +10,14 @@ enum ProcessorType
     x64
 };
 
-class Processor
+class IProcessor
 {
 protected:
     string version;
     ProcessorType type;
     double speed;
 public:
-    Processor() = default;
+    IProcessor() = default;
     virtual string getInfo();
     virtual string getVendor();
     virtual string getVersion();

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class IntelProcessor: public Processor
+class IntelProcessor: public IProcessor
 {
 public:
     IntelProcessor(double newSpeed, ProcessorType newType, string newVersion);

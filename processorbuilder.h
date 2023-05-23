@@ -9,7 +9,7 @@ class ProcessorBuilder
 private:
 public:
     ProcessorBuilder() = default;
-    Processor * build(string vender, double speed, ProcessorType type, string version);
+    IProcessor * build(string vender, double speed, ProcessorType type, string version);
 };
 
 #endif // PROCESSORBUILDER_H

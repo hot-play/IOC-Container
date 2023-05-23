@@ -22,6 +22,16 @@ ProcessorType IntelProcessor::getType() {
     return type;
 }
 
+string IntelProcessor::getStringType() {
+    if (type == ProcessorType::x86) {
+        return "x86";
+    }
+    if (type == ProcessorType::x64) {
+        return "x64";
+    }
+    throw std::runtime_error("Processor type is not valid");
+}
+
 double IntelProcessor::getSpeed() {
     return speed;
 }

@@ -1,35 +1,29 @@
 #include "processor.h"
 
-string Processor::getInfo() {
+string IProcessor::getInfo() {
     throw std::runtime_error("Processor is not valid");
 }
 
-string Processor::getVendor() {
+string IProcessor::getVendor() {
     throw std::runtime_error("Processor is not valid");
 }
 
-string Processor::getVersion() {
+string IProcessor::getVersion() {
     throw std::runtime_error("Processor is not valid");
 }
 
-ProcessorType Processor::getType() {
+ProcessorType IProcessor::getType() {
     throw std::runtime_error("Processor is not valid");
 }
 
-string Processor::getStringType() {
-    if (type == ProcessorType::x86) {
-        return "x86";
-    }
-    if (type == ProcessorType::x64) {
-        return "x64";
-    }
+string IProcessor::getStringType() {
     throw std::runtime_error("Processor is not valid");
 }
 
-double Processor::getSpeed() {
+double IProcessor::getSpeed() {
     throw std::runtime_error("Processor is not valid");
 }
 
-void Processor::setSpeed(double newSpeed) {
+void IProcessor::setSpeed(double newSpeed) {
     throw std::runtime_error("Processor is not valid");
 }

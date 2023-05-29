@@ -1,11 +1,5 @@
 #include "intelprocessor.h"
 
-IntelProcessor::IntelProcessor(double newSpeed, ProcessorType newType, string newVersion) {
-    speed = newSpeed;
-    type = newType;
-    version = newVersion;
-}
-
 string IntelProcessor::getVendor() {
     return "Intel";
 }
@@ -34,6 +28,12 @@ string IntelProcessor::getStringType() {
 
 double IntelProcessor::getSpeed() {
     return speed;
+}
+
+void IntelProcessor::set(double newSpeed, ProcessorType newType, string newVersion) {
+    speed = newSpeed;
+    type = newType;
+    version = newVersion;
 }
 
 void IntelProcessor::setSpeed(double newSpeed) {

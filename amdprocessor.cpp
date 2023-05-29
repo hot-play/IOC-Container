@@ -1,11 +1,5 @@
 #include "amdprocessor.h"
 
-AmdProcessor::AmdProcessor(double newSpeed, ProcessorType newType, string newVersion) {
-    speed = newSpeed;
-    type = newType;
-    version = newVersion;
-}
-
 string AmdProcessor::getInfo() {
     return "Processor AMD version: " + version + ", type:  " + getStringType() + ", speed: " + to_string(speed);
 }
@@ -34,6 +28,12 @@ string AmdProcessor::getStringType() {
 
 double AmdProcessor::getSpeed() {
     return speed;
+}
+
+void AmdProcessor::set(double newSpeed, ProcessorType newType, string newVersion) {
+    speed = newSpeed;
+    type = newType;
+    version = newVersion;
 }
 
 void AmdProcessor::setSpeed(double newSpeed) {

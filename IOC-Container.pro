@@ -19,10 +19,10 @@ SOURCES += main.cpp \
     processor.cpp \
     intelprocessor.cpp \
     amdprocessor.cpp \
-    processorbuilder.cpp
+    computer.cpp
 
 HEADERS += \
     processor.h \
     intelprocessor.h \
     amdprocessor.h \
-    processorbuilder.h
+    computer.h

@@ -13,6 +13,7 @@ private:
     double speed;
 public:
     IntelProcessor() = default;
+    ~IntelProcessor() override;
     string getVendor() override;
     string getInfo() override;
     string getVersion() override;

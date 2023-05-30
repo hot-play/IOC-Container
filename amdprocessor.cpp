@@ -1,5 +1,9 @@
 #include "amdprocessor.h"
 
+AmdProcessor::~AmdProcessor() {
+    cout << "Amd destructor"<< endl;
+}
+
 string AmdProcessor::getInfo() {
     return "Processor AMD version: " + version + ", type:  " + getStringType() + ", speed: " + to_string(speed);
 }

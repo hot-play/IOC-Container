@@ -1,5 +1,9 @@
 #include "intelprocessor.h"
 
+IntelProcessor::~IntelProcessor() {
+    cout << "Intel destructor"<< endl;
+}
+
 string IntelProcessor::getVendor() {
     return "Intel";
 }

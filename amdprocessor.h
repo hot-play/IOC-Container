@@ -13,6 +13,7 @@ private:
     double speed;
 public:
     AmdProcessor() = default;
+    ~AmdProcessor() override;
     string getInfo() override;
     string getVendor() override;
     string getVersion() override;

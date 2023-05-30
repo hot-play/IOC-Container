@@ -121,10 +121,7 @@ public:
 
 int IOCContainer::s_nextTypeId = 115094801;
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication a(argc, argv);
-
+void func() {
     IOCContainer injector;
 
     // (3800, ProcessorType::x86, "i5")
@@ -142,6 +139,13 @@ int main(int argc, char *argv[])
     computer.setProcessor(amd);
     cout << "Processor amd: " << endl;
     cout << computer.getProcessor()->getInfo() << endl;
+}
+
+int main(int argc, char *argv[])
+{
+    QCoreApplication a(argc, argv);
+
+    func();
 
     return a.exec();
 }
